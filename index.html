@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="to-do-list.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/mystyle.css">
+    <title>To-Do List</title>
+    
+</head>
+<body>
+    <section class="loaf">
+        <div>
+            <h1><img src="to-do-list.png" class="icon"> To-Do List</h1>
+        </div>
+        <div class="task-box" >
+            <input type="text" id="newtask" placeholder="Add New Task" class="newtasks">
+            <input type="submit" id="submit" class="addtask" value="Add Task">
+        </div>
+    </section>
+    <div class="box">
+        <div class="button-group">
+            <button class="btnr active" id="tasktodo">Task To-Do</button>
+            <button class="btnl" id="completed">Completed Task</button>
+        </div>
+        <div class="button-group">
+            <button class="trash" id="bin"><i class="fa fa-trash-o">Clear All Task</i></button>
+        </div>
+    </div>
+    <div class="task-container" >
+        <button class="clear" id="clear"><i class="fa fa-trash"></i> Clear All</button>
+        <h2>Tasks</h2>
+        
+        <div id="tasksContainer">
+
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

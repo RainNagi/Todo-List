@@ -1,0 +1,292 @@
+@import url('https://fonts.cdnfonts.com/css/alexander-display');
+@import url('https://fonts.cdnfonts.com/css/caramelia');
+
+.icon{
+    height: 40px;
+    width: 40px;
+}
+body{
+    font-family: 'Alexander Display', sans-serif;
+    background-image: url(background2.jpg); 
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+    background-size: cover;
+}
+section.loaf{
+    margin: auto;
+    margin-bottom: 0px;
+    width: 95%;
+    background-color: rgba(248, 233, 184, 0.8);
+    padding-top: 10px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+h1{
+    font-size: 55px;
+    margin: 30px;
+}
+.task-box{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 0px;
+    height: 50px;
+    width: 50%;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+}
+input[type="text"].newtasks{
+    background-color: #DED0B6;
+    font-family: 'Caramelia', sans-serif;
+    width: 100%;
+    padding-left: 20px;
+    font-size: 20px;
+    border-left: none;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+}
+input[type="submit"].addtask{
+    background-color: #DED0B6;
+    font-family: 'Caramelia', sans-serif;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 35%;
+    font-size: 15px;
+}
+input[type="submit"].addtask:hover{
+    background-color: #776a54;
+    color: wheat;
+    
+}
+input[type="submit"].addtask:active{
+    background-color: #c79642;
+    color: wheat;
+    
+}
+.task .content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.task .text {
+    flex-grow: 1;
+    padding: 0.5rem;
+    border: none;
+    background-color: #f2f2f2;
+    font-family: 'Caramelia', sans-serif;
+}
+.box{
+    width: 95%;
+    margin: 0px auto;
+}
+
+.button-group{
+    cursor: pointer;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+button.btnr{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 10px;
+    padding: 12px 15px 12px 15px;
+    font-size: 15px;
+    font-weight: bold;
+    border-left: none;
+    border-top: none;
+    border-bottom: none;
+    border-radius: 60px 0px 0px 60px;
+    background-color: rgb(255, 145, 0);
+    float: left;
+}
+button.btnl{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 12px 15px 12px 15px;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    border-radius: 0px 60px 60px 0px;
+    background-color: rgb(255, 145, 0);
+    float: left;
+}
+button.btnr:hover{
+    background-color: rgb(241, 198, 117);
+}
+button.btnl:hover{
+    background-color: rgb(241, 198, 117);
+}
+button.active{
+    background-color: rgb(250, 101, 2);
+}
+
+.trash{
+    margin-left: 10px;
+    font-size:20px;
+    padding: 7px 11px;
+    border-radius: 30px;
+    background-color: rgb(245, 143, 143);
+    border: none;
+}
+.trash:hover{
+    background-color: rgb(255, 10, 10);
+    color:white;
+}
+
+h2{
+    font-size: 40px;
+    margin: 0px;
+    text-align: left;   
+    margin-left: 50px;
+    display: flex;
+    margin-right: 30px;
+    justify-content: space-between;
+}
+button.clear{
+    background-color: rgb(247, 117, 117);
+    border: none;
+    float: right;
+    margin-right: 30px;
+    border-radius: 10px;
+    padding: 10px 0px 10px 0px;
+    width: 140px;
+    font-size: 20px;
+}
+button.clear:hover{
+    background-color: rgb(253, 2, 2);
+    color: white;
+}
+button.clear:active{
+    background-color: rgb(252, 74, 74);
+    color: white;
+}
+
+.task-container{
+    border-radius: 10px;
+    margin: auto;
+    margin-bottom: 0px;
+    width: 85%;
+    background-color: rgba(248, 233, 184, 0.8);
+    padding-top: 10px;
+    padding-bottom: 20px;
+    
+    
+}
+input[type="text"].text{
+    width: auto;
+    padding: 5px 0px 5px 7px;
+    background-color: #c79642;
+    font-size: 20px;
+    border: 0px;
+}
+.tasks .text:not(:read-only){
+    color: #DED0B6;
+}
+input[type="checkbox"]{
+    padding: 5px 0px 5px 0px;
+    margin: 4px 10px;
+    width: 18px;
+    height: 18px;
+    line-height: normal;
+
+}
+.task{
+    border-radius: 20px;
+    width: 70%;
+    margin: auto;
+    margin-top: 2px;
+    margin-bottom: 10px;
+    background-color: #c79642;
+    display: flex;
+	justify-content: space-between;
+    padding: 10px;
+}
+button.edit{
+    border: none;
+    background-color: rgb(217, 252, 122);
+    border-radius: 30px;
+    padding: 5px 0px 5px 0px;
+    width: 100px;
+    font-size: 20px;
+}
+button.delete{
+    border: none;
+    background-color: rgb(217, 252, 122);
+    border-radius: 30px;
+    padding: 5px 0px 5px 0px;
+    width: 100px;
+    font-size: 20px;
+}
+button.edit:hover{
+    background-color: rgb(252, 222, 122);
+}
+button.delete:hover{
+    background-color: rgb(255, 81, 75);
+}
+
+@media screen and (max-width: 850px) {
+    section.loaf {
+        width: 95%;
+    }
+
+    .task-box {
+        width: 80%;
+    }
+
+    h2 {
+        font-size: 25px;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .task-container {
+        width: 90%;
+    }
+    input[type="checkbox"]{
+        padding: 0px;
+        margin: 0px 5px;
+        width: 10px;
+        height: 10px;
+        line-height: normal;
+    }
+    input[type="text"].text {
+        font-size: 15px;
+        width: 44%;
+    }
+    button.btnr{
+        
+        padding: 12px 15px 12px 15px;
+        font-size: 13px;
+    }
+    button.btnl{
+        margin-right: 10px;
+        padding: 12px 16px 12px 15px;
+        font-size: 13px;
+    }
+    .trash{
+        margin-left: 5px;
+        font-size:13px;
+        padding: 12px 15px 12px 15px;
+        
+    }
+    button.edit{
+        font-size: 15px;
+        padding: 5px 0px 5px 0px;
+        width: 80px;
+    }
+    button.delete{
+        font-size: 15px;
+        padding: 5px 0px 5px 0px;
+        width: 80px;
+    }
+    button.clear{
+        margin-right: 30px;
+        border-radius: 10px;
+        padding: 6px 2px 6px 2px;
+        width: 80px;
+        font-size: 13px;
+    }
+
+    .task {
+        width: 90%;
+    }
+}
